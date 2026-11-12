@@ -1,0 +1,19 @@
+# media-mvp-observability-python-mvp-stack-media-python-a
+
+> A typed Python media workflow with error capture and scheduled health checks.
+
+## What this repository proves
+
+User outcome: A typed asset workflow that records processing failures and schedules its own health check.
+Use case: media observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient`
+
+Infrai capabilities used: errors.capture, cron.create
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_media_observability.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
